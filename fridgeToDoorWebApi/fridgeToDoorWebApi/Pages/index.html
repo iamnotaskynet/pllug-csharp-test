@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <meta http-equiv="content-type" content="text/html; charset=utf-8" /> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FridgeToDoor</title>
+    <style>
+        body {font-family: Arial;}
+
+        /* Style the tab */
+        .tabs {
+            /*overflow: hidden;*/
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        /* Style the buttons inside the tab */
+        .tabs button {
+            color: black;
+            background-color: inherit;
+            /*float: left;*/
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tabs button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tabs button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+        	height: 220px; /* TODO: must be relative*/
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        .flex-container {
+        	display: flex;
+        	justify-content: space-evenly;
+        }
+
+        .flex-container-2 {
+        	display: flex;
+        	justify-content: center;
+        }
+        .flex-item {
+
+        }
+
+        label {
+		    display: inline-block;
+		    text-align: right;
+		    font-size: 1em;
+		    width: 25%;
+		}
+		input[type=submit] {
+
+			background: LightSalmon;
+			color: white;
+			font-weight: 900;
+			font-size: 30px;
+			padding: 10px;
+			margin: 10px;
+			align-self: center;
+		}
+    </style>
+</head>
+<body>
+
+    <div class="tabs flex-container-2">
+        <button class="tablinks" onclick="openTab(event, 'cube-to-square')">Cube to square</button>
+        <button class="tablinks" onclick="openTab(event, 'cube-to-circle')">Cube to circle</button>
+        <button class="tablinks" onclick="openTab(event, 'ball-to-square')">Ball to square</button>
+        <button class="tablinks" onclick="openTab(event, 'ball-to-circle')">Ball to circle</button>
+        <button class="tablinks" onclick="openTab(event, 'cylinder-to-square')">Сylinder to square</button>
+        <button class="tablinks" onclick="openTab(event, 'cylinder-to-circle')">Сylinder to circle</button>
+    </div>
+	<!-- CUBE TO SQUARE -->
+	<form id="cube-to-square" class="tabcontent" 
+			action="https://localhost:5001/api/cubetosquare/" method="GET" target="result">
+		<div class="flex-container">
+			 <div class="flex-item">
+				<h1>THE DOORS:</h1>
+				<label for="a1">width</label>
+				<input id="a1" type="number" name="widthD" step="0.01" min="1" max="140000">
+				<br>
+				<label for="a2">height</label>
+				<input id="a2" type="number" name="heightD" step="0.01" min="1" max="140000">
+			</div>
+
+			<div class="flex-item">
+				<h1>THE FRIDGE:</h1>
+				<label for="a3">width</label>
+				<input id="a3" type="number" name="widthF" step="0.01" min="1" max="140000">
+				<br>
+				<label for="a4">height</label>
+				<input id="a4" type="number" name="heightF" step="0.01" min="1" max="140000">
+				<br>
+				<label for="a5">length</label>
+				<input id="a5" type="number" name="lengthF" step="0.01" min="1" max="140000">
+			</div>
+		</div>
+		<div class="flex-container">
+			<input type="submit" name="submit"  value="CALCULATE" />
+		</div>
+	</form>
+	<!-- CUBE TO CIRCLE -->
+	<form id="cube-to-circle" class="tabcontent" 
+			action="https://localhost:5001/api/cubetocircle/" method="GET" target="result">
+		<div class="flex-container">
+			 <div class="flex-item">
+				<h1>THE DOORS:</h1>
+				<label for="b1">radius</label>
+				<input id="b1" type="number" name="radiusD" step="0.01" min="1" max="140000">
+			</div>
+
+			<div class="flex-item">
+				<h1>THE FRIDGE:</h1>
+				<label for="b3">width</label>
+				<input id="b3" type="number" name="widthF" step="0.01" min="1" max="140000">
+				<br>
+				<label for="b4">height</label>
+				<input id="b4" type="number" name="heightF" step="0.01" min="1" max="140000">
+				<br>
+				<label for="b5">length</label>
+				<input id="b5" type="number" name="lengthF" step="0.01" min="1" max="140000">
+			</div>
+		</div>
+		<div class="flex-container">
+			<input type="submit" name="submit"  value="CALCULATE" />
+		</div>
+	</form>
+
+	<!-- BALL TO SQUARE -->
+	<form id="ball-to-square" class="tabcontent" 
+			action="https://localhost:5001/api/balltosquare/" method="GET" target="result">
+		<div class="flex-container">
+			 <div class="flex-item">
+				<h1>THE DOORS:</h1>
+				<label for="c1">width</label>
+				<input id="c1" type="number" name="widthD" step="0.01" min="1" max="140000">
+				<br>
+				<label for="c2">height</label>
+				<input id="c2" type="number" name="heightD" step="0.01" min="1" max="140000">
+			</div>
+
+			<div class="flex-item">
+				<h1>THE FRIDGE:</h1>
+				<label for="c3">radius</label>
+				<input id="c3" type="number" name="radiusF" step="0.01" min="1" max="140000">
+			</div>
+		</div>
+		<div class="flex-container">
+			<input type="submit" name="submit"  value="CALCULATE" />
+		</div>
+	</form>
+	<!-- BALL TO CIRCLE -->
+	<form id="ball-to-circle" class="tabcontent" 
+			action="https://localhost:5001/api/balltocircle/" method="GET" target="result">
+		<div class="flex-container">
+			 <div class="flex-item">
+				<h1>THE DOORS:</h1>
+				<label for="d1">radius</label>
+				<input id="d1" type="number" name="radiusD" step="0.01" min="1" max="140000">
+			</div>
+
+			<div class="flex-item">
+				<h1>THE FRIDGE:</h1>
+				<label for="d2">radius</label>
+				<input id="d2" type="number" name="radiusF" step="0.01" min="1" max="140000">
+			</div>
+		</div>
+		<div class="flex-container">
+			<input type="submit" name="submit"  value="CALCULATE" />
+		</div>
+	</form>
+
+	<!-- CYLINDER TO SQUARE -->
+	<form id="cylinder-to-square" class="tabcontent" 
+			action="https://localhost:5001/api/cylindertosquare/" method="GET" target="result">
+		<div class="flex-container">
+			 <div class="flex-item">
+				<h1>THE DOORS:</h1>
+				<label for="e1">width</label>
+				<input id="e1" type="number" name="widthD" step="0.01" min="1" max="140000">
+				<br>
+				<label for="e2">height</label>
+				<input id="e2" type="number" name="heightD" step="0.01" min="1" max="140000">
+			</div>
+
+			<div class="flex-item">
+				<h1>THE FRIDGE:</h1>
+				<label for="e3">radius</label>
+				<input id="e3" type="number" name="radiusF" step="0.01" min="1" max="140000">
+				<br>
+				<label for="e4">height</label>
+				<input id="e4" type="number" name="heightF" step="0.01" min="1" max="140000">
+			</div>
+		</div>
+		<div class="flex-container">
+			<input type="submit" name="submit"  value="CALCULATE" />
+		</div>
+	</form>
+	<!-- CYLINDER TO CIRCLE -->
+	<form id="cylinder-to-circle" class="tabcontent" 
+			action="https://localhost:5001/api/cylindertocircle/" method="GET" target="result">
+		<div class="flex-container">
+			 <div class="flex-item">
+				<h1>THE DOORS:</h1>
+				<label for="f1">radius</label>
+				<input id="f1" type="number" name="radiusD" step="0.01" min="1" max="140000">
+			</div>
+
+			<div class="flex-item">
+				<h1>THE FRIDGE:</h1>
+				<label for="f2">radius</label>
+				<input id="f2" type="number" name="radiusF" step="0.01" min="1" max="140000">
+				<br>
+				<label for="f3">height</label>
+				<input id="f3" type="number" name="heightF" step="0.01" min="1" max="140000">
+			</div>
+		</div>
+		<div class="flex-container">
+			<input type="submit" name="submit"  value="CALCULATE" />
+		</div>
+	</form>
+
+
+    <br><br>
+
+    <div class="flex-container">Result:</div>
+    <div class="flex-container"><iframe id="result" name="result"></iframe></div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+</script>
+</body>
+</html>

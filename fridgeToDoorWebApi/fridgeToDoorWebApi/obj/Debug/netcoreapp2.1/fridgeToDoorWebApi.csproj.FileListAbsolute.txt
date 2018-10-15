@@ -1,0 +1,14 @@
+/home/iamnotaskynet/Projects/monodevelop-projects/fridgeToDoorWebApi/fridgeToDoorWebApi/bin/Debug/netcoreapp2.1/fridgeToDoorWebApi.deps.json
+/home/iamnotaskynet/Projects/monodevelop-projects/fridgeToDoorWebApi/fridgeToDoorWebApi/bin/Debug/netcoreapp2.1/fridgeToDoorWebApi.runtimeconfig.json
+/home/iamnotaskynet/Projects/monodevelop-projects/fridgeToDoorWebApi/fridgeToDoorWebApi/bin/Debug/netcoreapp2.1/fridgeToDoorWebApi.runtimeconfig.dev.json
+/home/iamnotaskynet/Projects/monodevelop-projects/fridgeToDoorWebApi/fridgeToDoorWebApi/bin/Debug/netcoreapp2.1/fridgeToDoorWebApi.dll
+/home/iamnotaskynet/Projects/monodevelop-projects/fridgeToDoorWebApi/fridgeToDoorWebApi/bin/Debug/netcoreapp2.1/fridgeToDoorWebApi.pdb
+/home/iamnotaskynet/Projects/monodevelop-projects/fridgeToDoorWebApi/fridgeToDoorWebApi/obj/Debug/netcoreapp2.1/fridgeToDoorWebApi.csprojAssemblyReference.cache
+/home/iamnotaskynet/Projects/monodevelop-projects/fridgeToDoorWebApi/fridgeToDoorWebApi/obj/Debug/netcoreapp2.1/fridgeToDoorWebApi.csproj.CoreCompileInputs.cache
+/home/iamnotaskynet/Projects/monodevelop-projects/fridgeToDoorWebApi/fridgeToDoorWebApi/obj/Debug/netcoreapp2.1/fridgeToDoorWebApi.RazorAssemblyInfo.cache
+/home/iamnotaskynet/Projects/monodevelop-projects/fridgeToDoorWebApi/fridgeToDoorWebApi/obj/Debug/netcoreapp2.1/fridgeToDoorWebApi.RazorAssemblyInfo.cs
+/home/iamnotaskynet/Projects/monodevelop-projects/fridgeToDoorWebApi/fridgeToDoorWebApi/obj/Debug/netcoreapp2.1/fridgeToDoorWebApi.AssemblyInfoInputs.cache
+/home/iamnotaskynet/Projects/monodevelop-projects/fridgeToDoorWebApi/fridgeToDoorWebApi/obj/Debug/netcoreapp2.1/fridgeToDoorWebApi.AssemblyInfo.cs
+/home/iamnotaskynet/Projects/monodevelop-projects/fridgeToDoorWebApi/fridgeToDoorWebApi/obj/Debug/netcoreapp2.1/fridgeToDoorWebApi.RazorTargetAssemblyInfo.cache
+/home/iamnotaskynet/Projects/monodevelop-projects/fridgeToDoorWebApi/fridgeToDoorWebApi/obj/Debug/netcoreapp2.1/fridgeToDoorWebApi.dll
+/home/iamnotaskynet/Projects/monodevelop-projects/fridgeToDoorWebApi/fridgeToDoorWebApi/obj/Debug/netcoreapp2.1/fridgeToDoorWebApi.pdb
